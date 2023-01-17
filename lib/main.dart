@@ -4,31 +4,27 @@ void main() {
   runApp(MaterialApp(
       home: Scaffold(
           body: SafeArea(
-    child: Center(
-      child: Container(
-        color: Colors.yellow,
-        child: Row(
-          children: [
-            Container(
-              width: 40,
-              height: 40,
-              color: Colors.blueAccent,
-              child: Center(child: Text("1")),
-            ),
-            Container(
-              width: 40,
-              height: 40,
-              color: Colors.redAccent,
-              child: Center(child: Text("2")),
-            ),
-            Container(
-              width: 40,
-              height: 40,
-              color: Colors.greenAccent,
-              child: Center(child: Text("3")),
-            ),
-          ],
-        ),
+    child: Container(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Container(
+            width: 80,
+            color: Colors.red,
+            child: Text("I am red"),
+          ),
+          Container(
+            width: 80,
+            color: Colors.blue,
+            child: Text("I am blue"),
+          ),
+          Container(
+            width: 80,
+            color: Colors.green,
+            child: Text("I am green"),
+          ),
+        ],
       ),
     ),
   ))));
