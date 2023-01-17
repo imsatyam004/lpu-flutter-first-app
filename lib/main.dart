@@ -5,22 +5,30 @@ void main() {
       home: Scaffold(
         
           body: SafeArea(
-    child: Center(
-        child: Container(
-      height: 200,
-      width: 200,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage("images/assetImageTest.jpg"), fit: BoxFit.cover),
-        border: Border.all(color: Colors.blue[300]!, width: 9),
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Center(
-          child: Text(
-        'COFFEE',
-        style: TextStyle(
-            fontSize: 40, color: Colors.white, fontWeight: FontWeight.bold),
-      )),
-    )),
+    child: Column(
+      children: [
+        Container(
+          width: 40,
+          height: 40,
+          color: Colors.blueAccent,
+          child: Center(child: Text("1")),
+          ),
+
+        Container(
+          width: 40,
+          height: 40,
+          color: Colors.redAccent,
+          child:Center(child: Text("2")),
+        ),
+
+        Container(
+          width: 40,
+          height: 40,
+          color: Colors.greenAccent,
+          child:Center(child: Text("3")),
+        ),
+        
+      ],
+    ),
   ))));
 }
